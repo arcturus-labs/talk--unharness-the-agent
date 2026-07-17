@@ -1,0 +1,14 @@
+Hi {{first_name}},
+
+Thank you for applying to the {{job_title}} role at {{company_name}}.
+
+To continue with your screening, we need a bit more information:
+
+{{#each missing_items}}
+- {{this}}
+{{/each}}
+
+Please reply with the above at your earliest convenience and we'll continue the review.
+
+Kind regards,
+The HireFlow Team

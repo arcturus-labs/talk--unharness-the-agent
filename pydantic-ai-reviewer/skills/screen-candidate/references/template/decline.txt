@@ -1,0 +1,8 @@
+Hi {{first_name}},
+
+Thank you for applying to the {{job_title}} role at {{company_name}}.
+
+After careful review, we've decided not to move forward with your application at this time. We appreciate the time and effort you put into applying and wish you the best in your search.
+
+Kind regards,
+The HireFlow Team

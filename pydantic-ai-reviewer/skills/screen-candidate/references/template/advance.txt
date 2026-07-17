@@ -1,0 +1,8 @@
+Hi {{first_name}},
+
+Thank you for applying to the {{job_title}} role at {{company_name}}.
+
+We were impressed by your background and would like to move you forward to the next stage of our process. A member of our team will be in touch shortly with next steps.
+
+Kind regards,
+The HireFlow Team

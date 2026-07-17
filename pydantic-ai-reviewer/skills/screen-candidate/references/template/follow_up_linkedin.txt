@@ -1,0 +1,13 @@
+Hi {{first_name}},
+
+Thank you for applying to the {{job_title}} role at {{company_name}}.
+
+We were unable to retrieve a complete copy of your LinkedIn profile during our review. To continue, please reply with:
+
+- your correct LinkedIn profile URL, and
+- {{missing_context}}
+
+Thanks, and we'll resume your screening as soon as we hear back.
+
+Kind regards,
+The HireFlow Team
