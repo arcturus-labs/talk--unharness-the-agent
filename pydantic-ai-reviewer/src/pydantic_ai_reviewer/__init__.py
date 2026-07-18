@@ -1,4 +1,4 @@
-from .ai_reviewer import AIReviewer, AIReviewOutput, build_review_prompt
+from .ai_reviewer import AIReviewer, AIReviewOutput
 from .models import Application, Company, JobOpening
 
-__all__ = ["AIReviewer", "AIReviewOutput", "Application", "Company", "JobOpening", "build_review_prompt"]
+__all__ = ["AIReviewer", "AIReviewOutput", "Application", "Company", "JobOpening"]

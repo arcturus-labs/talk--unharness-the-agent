@@ -5,7 +5,7 @@ import os
 
 from dotenv import load_dotenv
 
-from .ai_reviewer import AIReviewer, build_review_prompt
+from .ai_reviewer import AIReviewer
 from .event_logging import make_event_stream_printer, print_review_input, print_review_output
 from .models import example_application
 
@@ -23,7 +23,7 @@ async def main() -> None:
 
     reviewer = AIReviewer()
     application = example_application()
-    print_review_input(build_review_prompt(application))
+    print_review_input(application)
     output = await reviewer.review(
         application,
         event_stream_handler=make_event_stream_printer(),

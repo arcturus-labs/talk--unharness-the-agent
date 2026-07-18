@@ -18,6 +18,7 @@ from pydantic_ai.messages import (
 )
 
 from .ai_reviewer import AIReviewOutput
+from .models import Application
 
 RESET = "\033[0m"
 BOLD = "\033[1m"
@@ -122,11 +123,31 @@ def _fmt_event(event: object) -> str | None:
     return color(C_META, repr(event))
 
 
-def print_review_input(prompt: str) -> None:
+def print_review_input(application: Application) -> None:
+    job_opening = application.jobOpening
+    hiring_company = job_opening.company
+    sub_departments = ", ".join(str(value) for value in job_opening.subDepartments) or "None"
+
     print(color(C_HEADER, f"\n{'─' * 70}"))
     print(color(C_HEADER, "REVIEW INPUT"))
     print(color(C_HEADER, f"{'─' * 70}"))
-    print(prompt)
+    print(f"Application ID: {application.id}")
+    print(f'Candidate: first_name="{application.firstName}", last_name="{application.lastName}"')
+    print(f"Email: {application.email}")
+    print(f"Phone: {application.mobile}")
+    print(f"Bio: {application.bio}")
+    print(f"LinkedIn URL: {application.linkedinUrl}")
+    print(f"Job opening title: {job_opening.title}")
+    print(f"Job opening seniority level: {job_opening.seniorityLevel}")
+    print(f"Job opening department: {job_opening.department}")
+    print(f"Job opening sub-departments: {sub_departments}")
+    print(f"Job opening description: {job_opening.jobDescription}")
+    print(f"Hiring company: {hiring_company.name}")
+    print(f"Hiring company site: {hiring_company.siteUrl}")
+    print(f"Hiring company size: {hiring_company.size}")
+    print(f"Candidate region: {application.region}")
+    print()
+    print("Please screen this candidate using the screen-candidate skill.")
 
 
 def make_event_stream_printer():

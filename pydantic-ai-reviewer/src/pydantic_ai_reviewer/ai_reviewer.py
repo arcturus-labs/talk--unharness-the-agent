@@ -5,38 +5,12 @@ from typing import Any
 from pydantic import BaseModel, Field, field_validator
 from pydantic_ai import Agent, RunContext
 from pydantic_ai.capabilities import Thinking, WebFetch, WebSearch
-from pydantic_ai.models import Model
 from pydantic_ai.models.anthropic import AnthropicModel, AnthropicModelSettings
 from pydantic_ai_skills import SkillsCapability
 
 from .enums import UpdateType
 from .models import Application
 from .skill_support import SKILLS_DIR, retrieve_linkedin_profile
-
-
-def build_review_prompt(application: Application) -> str:
-    job_opening = application.jobOpening
-    hiring_company = job_opening.company
-    sub_departments = ", ".join(str(value) for value in job_opening.subDepartments) or "None"
-
-    return (
-        f"Application ID: {application.id}\n"
-        f"Candidate: first_name=\"{application.firstName}\", last_name=\"{application.lastName}\"\n"
-        f"Email: {application.email}\n"
-        f"Phone: {application.mobile}\n"
-        f"Bio: {application.bio}\n"
-        f"LinkedIn URL: {application.linkedinUrl}\n"
-        f"Job opening title: {job_opening.title}\n"
-        f"Job opening seniority level: {job_opening.seniorityLevel}\n"
-        f"Job opening department: {job_opening.department}\n"
-        f"Job opening sub-departments: {sub_departments}\n"
-        f"Job opening description: {job_opening.jobDescription}\n"
-        f"Hiring company: {hiring_company.name}\n"
-        f"Hiring company site: {hiring_company.siteUrl}\n"
-        f"Hiring company size: {hiring_company.size}\n"
-        f"Candidate region: {application.region}\n"
-        "\nPlease screen this candidate using the screen-candidate skill."
-    )
 
 
 class AIReviewOutput(BaseModel):
@@ -59,30 +33,27 @@ class AIReviewOutput(BaseModel):
         return value
 
 
-class AIReviewer(Agent[None, AIReviewOutput]):
-    def __init__(self, model: Model | str | None = None, capabilities: list[Any] | None = None) -> None:
-        capabilities = capabilities if capabilities is not None else [
-            SkillsCapability(directories=[SKILLS_DIR]),
-            Thinking(effort="high"),
-            WebSearch(),
-            WebFetch(),
-        ]
-
-        super().__init__(
-            model=model
-            or AnthropicModel(
+class AIReviewer:
+    def __init__(self) -> None:
+        self.agent = Agent(
+            model=AnthropicModel(
                 "claude-sonnet-5",
                 settings=AnthropicModelSettings(anthropic_thinking={"type": "adaptive"}),
             ),
             output_type=AIReviewOutput,
-            capabilities=capabilities,
+            capabilities=[
+                SkillsCapability(directories=[SKILLS_DIR]),
+                Thinking(effort="high"),
+                WebSearch(),
+                WebFetch(),
+            ],
             instructions=(
                 "You are a careful candidate-screening assistant; use the skills in the "
                 "repository skills directory to make a grounded recommendation."
             ),
         )
 
-        @self.tool
+        @self.agent.tool
         async def get_linkedin_profile(
             ctx: RunContext[None],
             first_name: str,
@@ -106,8 +77,33 @@ class AIReviewer(Agent[None, AIReviewOutput]):
         application: Application,
         event_stream_handler: Any | None = None,
     ) -> AIReviewOutput:
-        result = await self.run(
-            build_review_prompt(application),
+        job_opening = application.jobOpening
+        hiring_company = job_opening.company
+        sub_departments = ", ".join(str(value) for value in job_opening.subDepartments) or "None"
+
+        # Flatten the application into one prompt so the screening skill sees
+        # the candidate, role, and company context in a single input blob.
+        prompt = (
+            f"Application ID: {application.id}\n"
+            f"Candidate: first_name=\"{application.firstName}\", last_name=\"{application.lastName}\"\n"
+            f"Email: {application.email}\n"
+            f"Phone: {application.mobile}\n"
+            f"Bio: {application.bio}\n"
+            f"LinkedIn URL: {application.linkedinUrl}\n"
+            f"Job opening title: {job_opening.title}\n"
+            f"Job opening seniority level: {job_opening.seniorityLevel}\n"
+            f"Job opening department: {job_opening.department}\n"
+            f"Job opening sub-departments: {sub_departments}\n"
+            f"Job opening description: {job_opening.jobDescription}\n"
+            f"Hiring company: {hiring_company.name}\n"
+            f"Hiring company site: {hiring_company.siteUrl}\n"
+            f"Hiring company size: {hiring_company.size}\n"
+            f"Candidate region: {application.region}\n"
+            "\nPlease screen this candidate using the screen-candidate skill."
+        )
+
+        result = await self.agent.run(
+            prompt,
             event_stream_handler=event_stream_handler,
         )
         return result.output
