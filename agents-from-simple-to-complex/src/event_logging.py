@@ -63,18 +63,7 @@ def _fmt_tool_result(content: object) -> str:
 
 def _fmt_event(event: object) -> str | None:
     if isinstance(event, PartStartEvent):
-        part_kind = getattr(event.part, "part_kind", type(event.part).__name__)
-        if part_kind == "thinking":
-            return color(C_THINKING, "[thinking]")
-        if part_kind == "text":
-            return color(C_TEXT, "[assistant drafting final response]")
-        if part_kind == "tool-call":
-            return color(C_TOOL_CALL, "[tool call stream]")
-        if part_kind == "builtin-tool-call":
-            return color(C_TOOL_CALL, "[builtin tool call]")
-        if part_kind == "builtin-tool-return":
-            return color(C_TOOL_RESP, "[builtin tool result]")
-        return color(C_META, f"[{part_kind}]")
+        return None
 
     if isinstance(event, PartDeltaEvent):
         delta_kind = getattr(event.delta, "part_delta_kind", type(event.delta).__name__)
@@ -113,7 +102,7 @@ def _fmt_event(event: object) -> str | None:
         return color(C_META, "[deferred tool results]")
 
     if isinstance(event, FinalResultEvent):
-        return color(C_FINAL, "[final result]")
+        return None
 
     return color(C_META, repr(event))
 

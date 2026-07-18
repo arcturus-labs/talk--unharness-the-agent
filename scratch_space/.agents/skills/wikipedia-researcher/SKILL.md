@@ -1,9 +1,9 @@
 ---
 name: wikipedia-researcher
-description: Use this skill when asked to research a topic with Wikipedia and produce a small research folder with facts and a final report.
+description: Use this skill when asked to research a topic online and produce a small research folder with facts and a final report.
 ---
 
-# Wikipedia Researcher
+# Online Researcher
 
 When given a research question:
 
@@ -16,19 +16,12 @@ When given a research question:
 
 ## Research process
 
-Use Wikipedia's public APIs and machine-readable content when possible.
+Search online for relevant sources.
 
 Prefer:
-- Wikipedia search API to find relevant pages
-- Wikipedia page summary/extract APIs
-- raw or structured content formats rather than opening the HTML website
-
-Good starting points:
-- `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=...&format=json`
-- `https://en.wikipedia.org/api/rest_v1/page/summary/...`
-- `https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&titles=...&format=json`
-
-Prefer plain text extracts (`explaintext=1`) or summary endpoints over reading rendered HTML.
+- public APIs
+- raw or machine-readable content
+- plain text or structured data over rendered HTML when possible
 
 ## Facts file
 
@@ -38,11 +31,11 @@ Each fact should include:
 - the fact
 - the source URL
 
-Keep it simple, for example:
+Example:
 
 ```md
 - Rust was originally created by Graydon Hoare.
-  Source: https://en.wikipedia.org/wiki/Rust_(programming_language)
+  Source: https://www.rust-lang.org/
 ```
 
 ## Final report
@@ -57,4 +50,6 @@ Once you have enough facts to answer the question:
 
 `report.md` should just contain the research result itself.
 
-For the final response, give the user the path to the file on disk. Don't reiterate the report in your final response.
+## Final response
+
+For the final response, give the user the path to the file on disk. Do not reiterate the report in your final response. Instead, ONLY provide the path to `report.md`.

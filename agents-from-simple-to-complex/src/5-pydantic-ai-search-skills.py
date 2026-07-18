@@ -24,6 +24,7 @@ def main(user_prompt: str) -> None:
     agent = Agent(
         "anthropic:claude-haiku-4-5",
         name="read_write_edit_skills_agent",
+        retries=3,
         instructions="You are a helpful assistant. Be concise.",
         toolsets=[file_tools, shell_tools],
         capabilities=[
