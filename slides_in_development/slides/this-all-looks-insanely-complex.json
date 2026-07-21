@@ -1,0 +1,64 @@
+{
+  "id": "this-all-looks-insanely-complex",
+  "speaker_notes": "- You can use a real screenshot, a stylized list, or both when we build the actual slide.\n- The point is to surface the intimidation before we dismantle it.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "title": {
+      "type": "html",
+      "value": "Today's <b>coding agents</b> look insanely complex"
+    },
+    "left_panel_title": {
+      "type": "text",
+      "value": "The visible product surface"
+    },
+    "item_1": {
+      "type": "html",
+      "value": "Slash commands"
+    },
+    "item_2": {
+      "type": "html",
+      "value": "Tons of built-in tools"
+    },
+    "item_3": {
+      "type": "html",
+      "value": "MCP / extensions / integrations"
+    },
+    "item_4": {
+      "type": "html",
+      "value": "Permission systems"
+    },
+    "item_5": {
+      "type": "html",
+      "value": "Complex TUI"
+    },
+    "item_6": {
+      "type": "html",
+      "value": "Numerous hooks"
+    },
+    "item_7": {
+      "type": "html",
+      "value": "Subagents / Agent Teams"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  },
+  "style": {
+    "this-all-looks-insanely-complex.video_2": {
+      "height": "592.09px",
+      "width": "766px"
+    },
+    "this-all-looks-insanely-complex.video_1": {
+      "height": "620.09px",
+      "width": "654px"
+    }
+  }
+}

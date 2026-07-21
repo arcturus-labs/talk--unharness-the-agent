@@ -1,0 +1,50 @@
+{
+  "id": "wrap-up-time",
+  "speaker_notes": "- This should feel like a calm consolidation of the talk.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "kicker": {
+      "type": "text",
+      "value": "the takeaways from this talk"
+    },
+    "title": {
+      "type": "html",
+      "value": "Wrap-up<b>:</b>"
+    },
+    "point_1": {
+      "type": "html",
+      "value": "Agents and agent harnesses are <b>not magic</b>"
+    },
+    "point_2": {
+      "type": "html",
+      "value": "Building them increasingly looks like assembling <b>Lego blocks</b>"
+    },
+    "point_3": {
+      "type": "html",
+      "value": "Agents can do any task with the right <b>instructions</b>, <b>tools</b>, and <b>data</b>"
+    },
+    "point_4": {
+      "type": "html",
+      "value": "Programming them is getting easier, they speak <b>English</b>"
+    },
+    "point_5": {
+      "type": "html",
+      "value": "Agents can perform functions embedded inside <b>traditional software</b>"
+    },
+    "point_6": {
+      "type": "html",
+      "value": "Agents can exist outside traditional software products and even in <b>physical environments</b> as universal assistants"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  }
+}

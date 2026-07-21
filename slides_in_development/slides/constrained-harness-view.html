@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="slide-id" content="constrained-harness-view">
+  <title id="constrained-harness-view.title_tag">The constrained harness view</title>
+  <base href="../">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="styles.css" rel="stylesheet">
+  <script defer="" src="slide-runtime.js"></script>
+</head>
+<body>
+  <div class="deck-shell">
+    <div class="deck-scale" id="deckScale">
+      <section class="slide grain active" data-slide-id="constrained-harness-view">
+        <div class="absolute inset-0 px-[96px] py-[96px] flex flex-col justify-start">
+          <div class="note topbar">
+            <span data-bind="text:topbar_left" id="constrained-harness-view.topbar_left"></span>
+            <span data-bind="text:topbar_center" id="constrained-harness-view.topbar_center"></span>
+            <span id="constrained-harness-view.slide_counter">№<span data-bind="magic:slide_number" id="constrained-harness-view.slide_number"></span> / <span data-bind="magic:slide_count" id="constrained-harness-view.slide_count"></span></span>
+          </div>
+          <div class="h-[24px]"></div>
+          <div class="max-w-[1200px]">
+            <h1 class="h-lg" id="constrained-harness-view.title" data-bind="html:title"></h1>
+          </div>
+          <div class="grid grid-cols-3 gap-8 mt-20 flex-1" id="constrained-harness-view.348fd260" data-pw-generated-id="true">
+            <div class="panel rounded-[28px] p-8 min-h-[360px] flex items-center">
+              <div class="text-[46px] leading-[1.08] font-black tracking-[-.04em] text-center w-full" id="constrained-harness-view.assumption_1" data-bind="html:assumption_1"></div>
+            </div>
+            <div class="panel rounded-[28px] p-8 min-h-[360px] flex items-center">
+              <div class="text-[46px] leading-[1.08] font-black tracking-[-.04em] text-center w-full" id="constrained-harness-view.assumption_2" data-bind="html:assumption_2"></div>
+            </div>
+            <div class="panel rounded-[28px] p-8 min-h-[360px] flex items-center">
+              <div class="text-[46px] leading-[1.08] font-black tracking-[-.04em] text-center w-full" id="constrained-harness-view.assumption_3" data-bind="html:assumption_3"></div>
+            </div>
+          </div>
+          <div class="footer-note" data-bind="text:footnote" id="constrained-harness-view.footnote"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script>
+    function fit() {
+      const s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+      document.getElementById('deckScale').style.transform = `scale(${s})`;
+    }
+    window.addEventListener('resize', fit);
+    fit();
+  </script>
+
+
+
+</body></html>

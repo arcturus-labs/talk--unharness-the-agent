@@ -1,0 +1,62 @@
+{
+  "id": "ai-reviewer",
+  "speaker_notes": "- This one gets a little more polish, but it still works as a practical reference slide.\n- During the talk, I will use it as a navigation and command reference.\n- The key point is that the agent is embedded inside an application and performs a product task.\n- Review the skill file and emphasize that the behavior is written in English.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "kicker": {
+      "type": "text",
+      "value": "Agents can live inside software products"
+    },
+    "title": {
+      "type": "html",
+      "value": "Example: <b>Job application review assistant</b>"
+    },
+    "left_label": {
+      "type": "text",
+      "value": "What Matters"
+    },
+    "bullet_1": {
+      "type": "html",
+      "value": "Same model, skills, tools, instructions – adds <b>structured output</b>"
+    },
+    "bullet_3": {
+      "type": "html",
+      "value": "Traditional application code <b>call the agent</b> to execute a workflow"
+    },
+    "bullet_4": {
+      "type": "html",
+      "value": "Since the program is English, the <b><i>user</i> can read and fix code.</b>"
+    },
+    "right_label": {
+      "type": "text",
+      "value": "Run it"
+    },
+    "artifact_1": {
+      "type": "html",
+      "value": "<a class=\"link\" href=\"{{code_uri_prefix}}src/7-pydantic-ai-reviewer.py\">The AI reviewer agent implementation</a>"
+    },
+    "artifact_2": {
+      "type": "html",
+      "value": "<a class=\"link\" href=\"{{code_uri_prefix}}skills/screen-candidate/SKILL.md\">The screen-candidate skill file</a>"
+    },
+    "command_label": {
+      "type": "text",
+      "value": "Command"
+    },
+    "command": {
+      "type": "text",
+      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase && uv run src/7-pydantic-ai-reviewer.py"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  }
+}

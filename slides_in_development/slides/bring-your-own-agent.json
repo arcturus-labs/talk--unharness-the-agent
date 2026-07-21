@@ -1,0 +1,57 @@
+{
+  "id": "bring-your-own-agent",
+  "speaker_notes": "- Use the GitHub example heavily here.\n- Talk about creating issues, editing text and tags, and moving tasks on boards together.\n- The emotional point is how much more complete and engaging that experience becomes.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "kicker": {
+      "type": "text",
+      "value": "assistants can help us interact with software"
+    },
+    "title": {
+      "type": "html",
+      "value": "B.Y.O.A. – <b>Bring Your Own Agent</b>"
+    },
+    "main_statement": {
+      "type": "html",
+      "value": "The dominant interface may become <b>your own agent</b>."
+    },
+    "right_label": {
+      "type": "text",
+      "value": "Why it matters"
+    },
+    "point_1": {
+      "type": "html",
+      "value": "Built-in website assistants have <b>tools</b>, but not your full <b>context.</b>"
+    },
+    "point_2": {
+      "type": "html",
+      "value": "<i>Your</i> assistant knows <b>everything about your current task at hand.</b>"
+    },
+    "point_3": {
+      "type": "html",
+      "value": "Imagine if your assistant was given <b>tools and instructions</b> to interact with the website."
+    },
+    "point_4": {
+      "type": "html",
+      "value": "You and the assistant can work on the <b>same surface</b>."
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  },
+  "style": {
+    "bring-your-own-agent.github_copilot_image": {
+      "height": "903px",
+      "width": "868.65px",
+      "margin-top": "126px"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "ecosystem-is-standardizing",
+  "speaker_notes": "- First show only the code.\n- Let the audience absorb that both sides already look like understandable developer artifacts.\n- Then advance to the overlay version on the next slide.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "title": {
+      "type": "html",
+      "value": "The ecosystem is <b>standardizing</b>"
+    },
+    "left_label": {
+      "type": "text",
+      "value": "Pi"
+    },
+    "left_chip": {
+      "type": "text",
+      "value": "Extension-first"
+    },
+    "left_code": {
+      "type": "text",
+      "value": "export default (pi: ExtensionAPI) => {\n  pi.registerTool({\n    name: \"search_docs\",\n    description: \"Search company docs\",\n    parameters: Type.Object({ query: Type.String() }),\n    async execute(_id, { query }, signal) {\n      return {\n        content: [{ type: \"text\", text: await searchDocs(query, signal) }],\n        details: {},\n      };\n    },\n  });\n\n  pi.registerCommand(\"dashboard\", {\n    description: \"Open the dashboard\",\n    handler: (_args, ctx) => openDashboard(ctx.cwd),\n  });\n};"
+    },
+    "right_label": {
+      "type": "text",
+      "value": "Flue"
+    },
+    "right_chip": {
+      "type": "text",
+      "value": "App building blocks"
+    },
+    "right_code": {
+      "type": "text",
+      "value": "const instructions = `\nTriage a bug report end-to-end: reproduce the bug,\ndiagnose the root cause, verify whether the behavior is\nintentional, and attempt a fix.`\n\nexport default defineAgent(() => ({\n  model: 'anthropic/claude-sonnet-4-6',\n  tools: [replyToIssue],\n  skills: [triage, verify],\n  sandbox: local(),\n  instructions,\n}))"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  }
+}

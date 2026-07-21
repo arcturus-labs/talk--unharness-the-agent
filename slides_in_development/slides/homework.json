@@ -1,0 +1,58 @@
+{
+  "id": "homework",
+  "speaker_notes": "- End with a direct challenge.\n- Mention the four follow-up resources as ways to keep learning immediately after the talk.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "kicker": {
+      "type": "text",
+      "value": "How can you keep the takeaways?"
+    },
+    "title": {
+      "type": "html",
+      "value": "Make your <b>own agent</b> today."
+    },
+    "resource_1_label": {
+      "type": "text",
+      "value": "Code examples"
+    },
+    "resource_1_text": {
+      "type": "html",
+      "value": "The <b>agents-showcase</b> repository with the examples from this talk."
+    },
+    "resource_2_label": {
+      "type": "text",
+      "value": "My Blog"
+    },
+    "resource_2_text": {
+      "type": "html",
+      "value": "My blog, where I regularly write about <b>AI Product Engineering</b>."
+    },
+    "resource_3_label": {
+      "type": "text",
+      "value": "Videos and streams"
+    },
+    "resource_3_text": {
+      "type": "html",
+      "value": "My <b>YouTube channel</b>, where I post videos and live streams building <b>AI Products.</b>"
+    },
+    "resource_4_label": {
+      "type": "text",
+      "value": "Rook"
+    },
+    "resource_4_text": {
+      "type": "html",
+      "value": "My environment-aware <b>personal assistant.</b>"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  }
+}

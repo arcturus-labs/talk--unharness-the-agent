@@ -1,0 +1,71 @@
+{
+  "id": "build-your-own-agent",
+  "speaker_notes": "- Open with energy, frame the talk as practical and forward-looking.\n- Say we are going to demystify agents by building them and then expand the frame.",
+  "variables": {
+    "event_line": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "frame_label": {
+      "type": "text",
+      "value": "Opening frame"
+    },
+    "hero_title": {
+      "type": "html",
+      "value": "Build Your <b>Own</b> Agent"
+    },
+    "hero_subtitle": {
+      "type": "html",
+      "value": "Escape the <b>Harness</b>"
+    },
+    "supporting_line": {
+      "type": "html",
+      "value": "Agents are <b>way simpler</b> than they look,<br>they can do <b>far more</b> than software development,<br>and we can take them  <b>almost anywhere</b>."
+    },
+    "card_brand": {
+      "type": "text",
+      "value": "Agentic Engineering"
+    },
+    "card_chip": {
+      "type": "text",
+      "value": "Superstream"
+    },
+    "speaker_name": {
+      "type": "text",
+      "value": "John Berryman"
+    },
+    "speaker_org": {
+      "type": "text",
+      "value": "Arcturus Labs"
+    },
+    "org_line": {
+      "type": "text",
+      "value": "AI product consulting · applied agent systems"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    },
+    "speaker_photo_src": {
+      "type": "text",
+      "value": "assets/john_berryman_face.jpg"
+    },
+    "speaker_photo_alt": {
+      "type": "text",
+      "value": "John Berryman"
+    },
+    "org_logo_src": {
+      "type": "text",
+      "value": "assets/arcturus_logo.png"
+    },
+    "org_logo_alt": {
+      "type": "text",
+      "value": "Arcturus Labs logo"
+    }
+  },
+  "style": {
+    "build-your-own-agent.348fd2c7": {
+      "margin-top": "92px"
+    }
+  }
+}

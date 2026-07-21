@@ -1,0 +1,39 @@
+{
+  "id": "constrained-harness-view",
+  "speaker_notes": "- Start from the familiar frame, AI helping us build traditional software.\n- Explain that the visible harness complexity has distorted how we think about the core idea.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "title": {
+      "type": "html",
+      "value": "The way we're thinking about agents is <b> way too narrow</b>."
+    },
+    "assumption_1": {
+      "type": "html",
+      "value": "Agents are <b>too complex</b> for normal developers to build"
+    },
+    "assumption_2": {
+      "type": "html",
+      "value": "Agents are mostly just good at <b>software development</b>"
+    },
+    "assumption_3": {
+      "type": "html",
+      "value": "The main way to use agents are from <b>within a  terminal</b>"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  },
+  "style": {
+    "constrained-harness-view.348fd260": {
+      "margin-bottom": "30px"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "sessions-hooks-and-compaction",
+  "speaker_notes": "- These code-heavy demo slides are mostly practical references, not beauty slides.\n- During the talk, I will copy commands from the slide into the terminal and run them.\n- Future readers should be able to click through to the code and reproduce the demo.\n- These are not hard ideas.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "title": {
+      "type": "html",
+      "value": "Demo 6 - <b>sessions/hooks/compaction</b>"
+    },
+    "left_label": {
+      "type": "text",
+      "value": "What Matters"
+    },
+    "bullet_1": {
+      "type": "html",
+      "value": "User input is just <b>another loop around the tool calling loop</b>"
+    },
+    "bullet_2": {
+      "type": "html",
+      "value": "Hooks are callback functions executed at <b>specific lifecycle points</b>"
+    },
+    "right_label": {
+      "type": "text",
+      "value": "Run it"
+    },
+    "artifact_1": {
+      "type": "html",
+      "value": "<a class=\"link\" href=\"{{code_uri_prefix}}src/6-pydantic-ai-assistant-w-compaction.py\">An assistant with history compaction</a>"
+    },
+    "command_label": {
+      "type": "text",
+      "value": "Command"
+    },
+    "command": {
+      "type": "text",
+      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase && uv run src/6-pydantic-ai-assistant-w-compaction.py"
+    },
+    "prompt_flow_label": {
+      "type": "text",
+      "value": "Prompt flow"
+    },
+    "prompt_1": {
+      "type": "html",
+      "value": "1. Tell me a joke"
+    },
+    "prompt_2": {
+      "type": "html",
+      "value": "2. Explain the joke"
+    },
+    "prompt_3": {
+      "type": "html",
+      "value": "3. Why?"
+    },
+    "prompt_4": {
+      "type": "html",
+      "value": "4. Why?"
+    },
+    "prompt_5": {
+      "type": "html",
+      "value": "5. Why? Keep going until compaction happens"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  },
+  "style": {
+    "sessions-hooks-and-compaction.easy_stamp": {
+      "object-fit": "cover",
+      "height": "207.19px"
+    }
+  }
+}

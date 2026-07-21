@@ -1,0 +1,76 @@
+{
+  "id": "introducing-agent-skills",
+  "speaker_notes": "- These code-heavy demo slides are mostly practical references, not beauty slides.\n- During the talk, I will copy commands from the slide into the terminal and run them.\n- Future readers should be able to click through to the code and reproduce the demo.\n- Show the skill.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "title": {
+      "type": "html",
+      "value": "Demo 5 - introducing agent <b>skills</b>"
+    },
+    "left_label": {
+      "type": "text",
+      "value": "What Matters"
+    },
+    "bullet_1": {
+      "type": "html",
+      "value": "If an agent can <b><code>read</code></b>, you can save instruction files for it, <b>agent skills</b>"
+    },
+    "bullet_2": {
+      "type": "html",
+      "value": "English becomes <b>the programming language</b>"
+    },
+    "bullet_3": {
+      "type": "html",
+      "value": "Agent skills <b>are the programs</b>"
+    },
+    "bullet_4": {
+      "type": "html",
+      "value": "Agents are the <b>AI software runtime</b>"
+    },
+    "right_label": {
+      "type": "text",
+      "value": "Run it"
+    },
+    "artifact_1": {
+      "type": "html",
+      "value": "<a class=\"link\" href=\"{{code_uri_prefix}}src/5-pydantic-ai-research-skills.py\">A skills-enabled research agent</a>"
+    },
+    "artifact_2": {
+      "type": "html",
+      "value": "<a class=\"link\" href=\"{{code_uri_prefix}}scratch_space/.agents/skills/wikipedia-researcher/SKILL.md\">The wikipedia-research skill</a>"
+    },
+    "command_label": {
+      "type": "text",
+      "value": "Command"
+    },
+    "command": {
+      "type": "text",
+      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase && uv run src/5-pydantic-ai-research-skills.py"
+    },
+    "prompt_label": {
+      "type": "text",
+      "value": "Prompt"
+    },
+    "prompt": {
+      "type": "html",
+      "value": "Why did the Roman Republic turn into the Roman Empire?"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  },
+  "style": {
+    "introducing-agent-skills.easy_stamp": {
+      "height": "227.19px",
+      "object-fit": "cover"
+    }
+  }
+}

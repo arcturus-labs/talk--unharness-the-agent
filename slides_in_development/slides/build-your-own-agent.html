@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="slide-id" content="build-your-own-agent">
+  <title id="build-your-own-agent.title_tag">Build Your Own Agent</title>
+  <base href="../">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="styles.css" rel="stylesheet">
+  <script defer="" src="slide-runtime.js"></script>
+</head>
+<body>
+  <div class="deck-shell">
+    <div class="deck-scale" id="deckScale">
+      <section class="slide grain active" data-slide-id="build-your-own-agent">
+        <div class="absolute inset-0 p-[96px] flex flex-col justify-start">
+          <div class="note topbar">
+            <span data-bind="text:event_line" id="build-your-own-agent.event_line"></span>
+            <span data-bind="text:frame_label" id="build-your-own-agent.frame_label"></span>
+            <span id="build-your-own-agent.slide_counter">№<span data-bind="magic:slide_number" id="build-your-own-agent.slide_number"></span> / <span data-bind="magic:slide_count" id="build-your-own-agent.slide_count"></span></span>
+          </div>
+          <div class="h-[24px]"></div>
+          <div class="grid grid-cols-[1.15fr_0.85fr] gap-10 items-center" id="build-your-own-agent.348fd2c7" data-pw-generated-id="true">
+            <div>
+              <h1 class="h-hero" data-bind="html:hero_title" id="build-your-own-agent.hero_title"></h1>
+              <div class="h-lg mt-6" data-bind="html:hero_subtitle" id="build-your-own-agent.hero_subtitle"></div>
+              <p class="body-lg muted mt-12 max-w-[980px]" id="build-your-own-agent.supporting_line" data-bind="html:supporting_line"></p>
+            </div>
+            <div class="panel rounded-[34px] p-10">
+              <div class="flex items-center justify-between mb-8">
+                <div class="text-[46px] font-black tracking-[-.04em]" data-bind="text:card_brand" id="build-your-own-agent.card_brand"></div>
+                <div class="chip" data-bind="text:card_chip" id="build-your-own-agent.card_chip"></div>
+              </div>
+              <div class="flex items-center gap-6">
+                <img class="w-32 h-32 rounded-full object-cover img-border" data-bind-alt="speaker_photo_alt" data-bind-src="speaker_photo_src" id="build-your-own-agent.speaker_photo_src">
+                <div>
+                  <div class="text-[40px] font-bold" data-bind="text:speaker_name" id="build-your-own-agent.speaker_name"></div>
+                  <div class="body-sm muted mt-2" data-bind="text:speaker_org" id="build-your-own-agent.speaker_org"></div>
+                </div>
+              </div>
+              <div class="mt-8 flex items-center gap-4">
+                <img class="w-16 h-16 object-contain" data-bind-alt="org_logo_alt" data-bind-src="org_logo_src" id="build-your-own-agent.org_logo_src">
+                <div class="body-sm muted" data-bind="text:org_line" id="build-your-own-agent.org_line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-note" data-bind="text:footnote" id="build-your-own-agent.footnote"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script>
+    function fit() {
+      const s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+      document.getElementById('deckScale').style.transform = `scale(${s})`;
+    }
+    window.addEventListener('resize', fit);
+    fit();
+  </script>
+
+
+
+</body></html>

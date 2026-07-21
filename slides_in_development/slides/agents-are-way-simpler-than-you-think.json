@@ -1,0 +1,26 @@
+{
+  "id": "agents-are-way-simpler-than-you-think",
+  "speaker_notes": "- Very short transition.\n- This is the doorway into the demo ladder.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "title_top": {
+      "type": "html",
+      "value": "Let’s strip the harness <b>down to its core.</b>"
+    },
+    "title_bottom": {
+      "type": "html",
+      "value": "Then let's <br><b>build it back up.</b>"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  }
+}

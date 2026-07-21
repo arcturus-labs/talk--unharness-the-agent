@@ -1,0 +1,64 @@
+{
+  "id": "just-a-prompt-and-a-model",
+  "speaker_notes": "- These code-heavy demo slides are mostly practical references, not beauty slides.\n- During the talk, I will copy commands from the slide into the terminal and run them.\n- Future readers should be able to click through to the code and reproduce the demo.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "title": {
+      "type": "html",
+      "value": "Demo 1 - just a <b>prompt</b> and a <b>model</b>"
+    },
+    "left_label": {
+      "type": "text",
+      "value": "What Matters"
+    },
+    "bullet_1": {
+      "type": "html",
+      "value": "Smallest possible <b>useful \"agent\"</b>"
+    },
+    "bullet_2": {
+      "type": "html",
+      "value": "Just a <b>prompt</b> plus a <b>model call</b>"
+    },
+    "right_label": {
+      "type": "text",
+      "value": "Run it"
+    },
+    "artifact_1": {
+      "type": "html",
+      "value": "<a class=\"link\" href=\"{{code_uri_prefix}}src/1-just-a-model.py\">The smallest possible agent script</a>"
+    },
+    "command_label": {
+      "type": "text",
+      "value": "Command"
+    },
+    "command": {
+      "type": "text",
+      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase && uv run src/1-just-a-model.py"
+    },
+    "prompt_label": {
+      "type": "text",
+      "value": "Prompt"
+    },
+    "prompt": {
+      "type": "html",
+      "value": "tell me a joke"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  },
+  "style": {
+    "just-a-prompt-and-a-model.title": {
+      "width": "2028px",
+      "height": "328.47px"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "introduce-the-tool-loop",
+  "speaker_notes": "- These code-heavy demo slides are mostly practical references, not beauty slides.\n- During the talk, I will copy commands from the slide into the terminal and run them.\n- Future readers should be able to click through to the code and reproduce the demo.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "title": {
+      "type": "html",
+      "value": "Demo 2 - introduce the <b>tool loop</b>"
+    },
+    "left_label": {
+      "type": "text",
+      "value": "What Matters"
+    },
+    "bullet_1": {
+      "type": "html",
+      "value": "Tool lets the model <b>see and interact with the outside world</b>"
+    },
+    "bullet_2": {
+      "type": "html",
+      "value": "It's just a while loop that <b>wraps the model and tool execution</b>"
+    },
+    "right_label": {
+      "type": "text",
+      "value": "Run it"
+    },
+    "artifact_1": {
+      "type": "html",
+      "value": "<a class=\"link\" href=\"{{code_uri_prefix}}src/2-tool-loop.py\">A manual tool loop example</a>"
+    },
+    "command_label": {
+      "type": "text",
+      "value": "Command"
+    },
+    "command": {
+      "type": "text",
+      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase && uv run src/2-tool-loop.py"
+    },
+    "prompt_label": {
+      "type": "text",
+      "value": "Prompt"
+    },
+    "prompt": {
+      "type": "html",
+      "value": "Does Hacker News have any book recommendations about building AI Assistants?"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  },
+  "style": {
+    "introduce-the-tool-loop.easy_stamp": {
+      "object-fit": "cover",
+      "height": "195.19px"
+    }
+  }
+}

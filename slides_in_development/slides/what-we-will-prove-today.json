@@ -1,0 +1,42 @@
+{
+  "id": "what-we-will-prove-today",
+  "speaker_notes": "- Connect the proof points back to the opportunity.\n- Make the career / marketability point briefly, then move on.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "title": {
+      "type": "html",
+      "value": "Today <b>we will demonstrate</b> that"
+    },
+    "proof_1": {
+      "type": "html",
+      "value": "Agents are <b>way simpler</b> than you think"
+    },
+    "proof_2": {
+      "type": "html",
+      "value": "Agents can do <b>way more</b> than software development"
+    },
+    "proof_3": {
+      "type": "html",
+      "value": "Agents can are useful in <b>many more places</b> besides the terminal"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  },
+  "style": {
+    "what-we-will-prove-today.348fd2c7": {
+      "margin-bottom": "44px"
+    },
+    "what-we-will-prove-today.title": {
+      "width": "1920px"
+    }
+  }
+}

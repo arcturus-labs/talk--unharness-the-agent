@@ -1,0 +1,72 @@
+{
+  "id": "add-3-tools-for-a-coding-agent",
+  "speaker_notes": "- These code-heavy demo slides are mostly practical references, not beauty slides.\n- During the talk, I will copy commands from the slide into the terminal and run them.\n- Future readers should be able to click through to the code and reproduce the demo.\n- This is the first moment that really feels like a coding agent.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "title": {
+      "type": "html",
+      "value": "Demo 4 - your first actual <b>coding agent</b>"
+    },
+    "left_label": {
+      "type": "text",
+      "value": "What Matters"
+    },
+    "bullet_1": {
+      "type": "html",
+      "value": "<b>Read</b>, <b>write</b>, and <b>shell</b> are sufficient tools to make a <b>simple coding agent</b>"
+    },
+    "bullet_2": {
+      "type": "html",
+      "value": "Models are so tuned for software that you <b>don't need instructions</b>"
+    },
+    "right_label": {
+      "type": "text",
+      "value": "Run it"
+    },
+    "artifact_1": {
+      "type": "html",
+      "value": "<a class=\"link\" href=\"{{code_uri_prefix}}src/4-pydantic-ai-read-write-edit.py\">A read/write/shell agent</a>"
+    },
+    "command_label": {
+      "type": "text",
+      "value": "Command"
+    },
+    "command": {
+      "type": "text",
+      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase && uv run src/4-pydantic-ai-read-write-edit.py"
+    },
+    "prompt_label": {
+      "type": "text",
+      "value": "Prompt"
+    },
+    "prompt": {
+      "type": "text",
+      "value": "In /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/scratch_space, create a cli tool in rust that generates the first N primes (N provided as argument), make standard rust package, build it, tell me how to run it as a one-liner (use absolute paths)."
+    },
+    "follow_up_label": {
+      "type": "text",
+      "value": "Then"
+    },
+    "follow_up": {
+      "type": "html",
+      "value": "Review the code and run it."
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  },
+  "style": {
+    "add-3-tools-for-a-coding-agent.easy_stamp": {
+      "height": "179.19px",
+      "object-fit": "cover"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "bring-your-agent-into-the-physical-world",
+  "speaker_notes": "- Keep this grounded in one concrete example rather than too many possibilities.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "kicker": {
+      "type": "text",
+      "value": "Agents can help us navigate physical environments and locations"
+    },
+    "title": {
+      "type": "html",
+      "value": "B.Y.O.A. into the <b>real world</b>"
+    },
+    "main_statement": {
+      "type": "html",
+      "value": "Why stop at <b>websites</b> and <b>software applications</b>?"
+    },
+    "right_label": {
+      "type": "text",
+      "value": "Why stop at websites and applications?"
+    },
+    "point_1": {
+      "type": "html",
+      "value": "Your assistant knows <b>your goals</b> and has access to <b>your information</b>."
+    },
+    "point_2": {
+      "type": "html",
+      "value": "When you enter a <b>location</b>, your assistant gains <b>tools and instructions</b> for that environment."
+    },
+    "point_3": {
+      "type": "html",
+      "value": "Grocery stores: reads your <b>shopping list</b>, helps you <b>navigate inventory and aisles</b>."
+    },
+    "point_4": {
+      "type": "html",
+      "value": "Home environment: sets your <b>thermostat</b>, interacts with <b>IoT devices</b>"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  },
+  "style": {
+    "bring-your-agent-into-the-physical-world.rook_iphone_image": {
+      "width": "952px",
+      "height": "1156.56px",
+      "margin-top": "70px"
+    },
+    "bring-your-agent-into-the-physical-world.rook_logo_gradient": {
+      "margin-right": "598px",
+      "width": "176px",
+      "height": "176px",
+      "margin-top": "512px"
+    }
+  }
+}

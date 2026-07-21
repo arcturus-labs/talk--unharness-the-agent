@@ -1,0 +1,32 @@
+name: Build Your Own Agent – Escaping the Harness
+deckDate: July 20, 2026
+slideSize:
+  width: 1920
+  height: 1080
+styles: styles.css
+assetsDir: assets
+slides:
+  - build-your-own-agent
+  - constrained-harness-view
+  - what-we-will-prove-today
+  - agents-are-way-simpler-than-you-think
+  - this-all-looks-insanely-complex
+  - just-a-prompt-and-a-model
+  - introduce-the-tool-loop
+  - standardizing-tool-usage
+  - add-3-tools-for-a-coding-agent
+  - introducing-agent-skills
+  - sessions-hooks-and-compaction
+  - ecosystem-is-standardizing
+  - now-lets-unharness-the-agent
+  - ai-reviewer
+  - bring-your-own-agent
+  - bring-your-agent-into-the-physical-world
+  - wrap-up-time
+  - homework
+globals:
+  event_line: John Berryman · O'Reilly Superstream · July 23, 2026
+  footer: https://arcturus-labs.com
+  header_center: ""
+  # code_uri_prefix: zed://file//Users/johnberryman/projects/github/arcturus-labs/agents-showcase/
+  code_uri_prefix: https://github.com/arcturus-labs/agents-showcase/blob/main/

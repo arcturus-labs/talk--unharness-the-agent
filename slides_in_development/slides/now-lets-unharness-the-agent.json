@@ -1,0 +1,36 @@
+{
+  "id": "now-lets-unharness-the-agent",
+  "speaker_notes": "- Very short transition out of the demo ladder.",
+  "variables": {
+    "topbar_left": {
+      "type": "text",
+      "value": "{{event_line}}"
+    },
+    "topbar_center": {
+      "type": "text",
+      "value": "{{header_center}}"
+    },
+    "title_top": {
+      "type": "html",
+      "value": "Great, building agents <b>isn't that hard.</b>"
+    },
+    "title_bottom": {
+      "type": "html",
+      "value": "Now it's time to <br><b>unharness them.</b>"
+    },
+    "footnote": {
+      "type": "text",
+      "value": "{{footer}}"
+    }
+  },
+  "style": {
+    "now-lets-unharness-the-agent.title_bottom": {
+      "width": "1188px",
+      "margin-top": "0px"
+    },
+    "now-lets-unharness-the-agent.title_top": {
+      "width": "1092px",
+      "transform": "translateY(-100px)"
+    }
+  }
+}
