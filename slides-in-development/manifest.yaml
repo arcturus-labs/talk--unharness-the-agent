@@ -8,9 +8,9 @@ assetsDir: assets
 slides:
   - build-your-own-agent
   - constrained-harness-view
+  - this-all-looks-insanely-complex
   - what-we-will-prove-today
   - agents-are-way-simpler-than-you-think
-  - this-all-looks-insanely-complex
   - just-a-prompt-and-a-model
   - introduce-the-tool-loop
   - standardizing-tool-usage
@@ -28,5 +28,5 @@ globals:
   event_line: John Berryman · O'Reilly Superstream · July 23, 2026
   footer: https://arcturus-labs.com
   header_center: ""
-  # code_uri_prefix: zed://file//Users/johnberryman/projects/github/arcturus-labs/agents-showcase/
-  code_uri_prefix: https://github.com/arcturus-labs/agents-showcase/blob/main/
+  # code_uri_prefix: zed://file//Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/
+  code_uri_prefix: https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/
