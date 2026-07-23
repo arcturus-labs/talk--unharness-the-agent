@@ -28,5 +28,5 @@ globals:
   event_line: John Berryman · O'Reilly Superstream · July 23, 2026
   footer: https://arcturus-labs.com
   header_center: ""
-  # code_uri_prefix: zed://file//Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/
-  code_uri_prefix: https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/
+  code_uri_prefix: zed://file//Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/
+  # code_uri_prefix: https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/

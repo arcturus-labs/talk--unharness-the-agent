@@ -40,7 +40,7 @@
     },
     "command": {
       "type": "text",
-      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase && uv run src/4-pydantic-ai-read-write-edit.py"
+      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent && uv run src/4-pydantic-ai-read-write-edit.py"
     },
     "prompt_label": {
       "type": "text",
@@ -48,7 +48,7 @@
     },
     "prompt": {
       "type": "text",
-      "value": "In /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/scratch_space, create a cli tool in rust that generates the first N primes (N provided as argument), make standard rust package, build it, tell me how to run it as a one-liner (use absolute paths)."
+      "value": "In /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/scratch_space, create a cli tool in rust that generates the first N primes (N provided as argument), make standard rust package, build it, tell me how to run it as a one-liner (use absolute paths)."
     },
     "follow_up_label": {
       "type": "text",

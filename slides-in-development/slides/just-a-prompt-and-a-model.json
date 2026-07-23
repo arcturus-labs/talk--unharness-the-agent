@@ -40,7 +40,7 @@
     },
     "command": {
       "type": "text",
-      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase && uv run src/1-just-a-model.py"
+      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent && uv run src/1-just-a-model.py"
     },
     "prompt_label": {
       "type": "text",

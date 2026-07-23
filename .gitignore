@@ -39,3 +39,5 @@ scratch_space/**
 !scratch_space/.agents/
 !scratch_space/.agents/skills/
 !scratch_space/.agents/skills/**
+
+IGNORED/

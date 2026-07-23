@@ -16,7 +16,7 @@ Demos - Making agents isn't all that complicated
 2. add tools and now it can get some work done
 3. that's clumsy, all this has been standardized - see how simple this is with pydantic ai
 4. with the right tools (read, write, shell) we actually have a full-fledged agent
-  a. Let's treat it like a coding agent "In /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/scratch_space, create a cli tool in rust that generates the first N primes (N provided as argument), make standard rust package, build it, tell me how to run it as a one-liner (use absolute paths)"
+  a. Let's treat it like a coding agent "In /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/scratch_space, create a cli tool in rust that generates the first N primes (N provided as argument), make standard rust package, build it, tell me how to run it as a one-liner (use absolute paths)"
   b. review code and run it
 5. skills - if you can read files, that's all you need need to read skill files
   a. also note the nice packaging of all this stuff - "capabilities" tools, and instructions, and hooks
@@ -45,7 +45,7 @@ Mind expansion
 - First is when agents live inside the application
   - Agents don't have to work on code, they can do anything when given access to the proper tools, instructions, and data. – They can review job applications.
   - Agents don't have to live in a terminal, they can be embedded inside other applications.
-  - Dig into ai-reviewer example (/Users/johnberryman/projects/github/arcturus-labs/agents-showcase/pydantic-ai-reviewer/src/pydantic_ai_reviewer/ai_reviewer.py)
+  - Dig into ai-reviewer example (/Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/pydantic-ai-reviewer/src/pydantic_ai_reviewer/ai_reviewer.py)
     - Just the same old PydanticAI but with a skill (how to review applications) and a tool (linkedin lookups) and a structured output
   - English is the language of AI - skills are the new software - SMEs can read and debug stuff on their own. No need to translate from SME to Product Manager to Engineer to QA and back again
   - QR code to last talk which covered this in detail
@@ -219,7 +219,7 @@ End lesson review
   title: "Demo 1 - just a model"
   spoken_content:
     - "Start with the smallest possible useful thing, text in and text out (`1-just-a-model.py`)."
-    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/1-just-a-model.py`"
+    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/1-just-a-model.py`"
     - "Prompt: tell me a joke."
     - "Point: we do not talk about this much anymore, but prompt engineering still matters, and the prompt is still part of the program."
 
@@ -227,7 +227,7 @@ End lesson review
   title: "Demo 2 - add one tool"
   spoken_content:
     - "Now add a single tool and suddenly the model can get real work done (`2-tool-loop.py`)."
-    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/2-tool-loop.py`"
+    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/2-tool-loop.py`"
     - "Prompt: what is Hacker News saying about John Berryman?"
     - "Point: given a tool, the model can now see outside itself and interact with the world; implementation is easy - just a loop - we all know loops"
 
@@ -235,7 +235,7 @@ End lesson review
   title: "Demo 3 - standardize the loop"
   spoken_content:
     - "Now show the same basic idea in PydanticAI (`3-pydantic-ai.py`)."
-    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/3-pydantic-ai.py`"
+    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/3-pydantic-ai.py`"
     - "Prompt: what is Hacker News saying about John Berryman?"
     - "Point: the underlying pattern is the same, but the ergonomics get much better as things standardize."
 
@@ -243,8 +243,8 @@ End lesson review
   title: "Demo 4 - real coding agent"
   spoken_content:
     - "With the right tools, read, write, and shell, we actually have a full-fledged agent (`4-pydantic-ai-read-write-edit.py`)."
-    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/4-pydantic-ai-read-write-edit.py`"
-    - "Prompt: In /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/scratch_space, create a cli tool in rust that generates the first N primes (N provided as argument), make standard rust package, build it, tell me how to run it as a one-liner (use absolute paths)."
+    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/4-pydantic-ai-read-write-edit.py`"
+    - "Prompt: In /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/scratch_space, create a cli tool in rust that generates the first N primes (N provided as argument), make standard rust package, build it, tell me how to run it as a one-liner (use absolute paths)."
     - "Then review the code and run it."
     - "Point: by giving a model the right tools, it can become quite general."
 
@@ -252,7 +252,7 @@ End lesson review
   title: "Demo 5 - agent skills"
   spoken_content:
     - "If an agent can read files, that is enough to read skill files (`5-pydantic-ai-search-skills.py`)."
-    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/5-pydantic-ai-search-skills.py`"
+    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/5-pydantic-ai-search-skills.py`"
     - "Prompt: Research this: Why did the Roman Republic turn into the Roman Empire?"
     - "Show the skill file, show the results, and make the point that with the right instructions, tools, and data, an agent can do almost anything."
     - "Hint here that English is starting to act like the programming language."
@@ -261,7 +261,7 @@ End lesson review
   title: "Demo 6 - sessions, hooks, and compaction"
   spoken_content:
     - "Now add user input, sessions, hooks, and compaction (`6-pydantic-ai-assistant-w-compaction.py`)."
-    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/6-pydantic-ai-assistant-w-compaction.py`"
+    - "One-liner: `cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/6-pydantic-ai-assistant-w-compaction.py`"
     - "Prompt flow: ask it for a joke, ask it to explain the joke, then keep saying 'why' until compaction happens."
     - "Point: here again, the idea is simple, we just add another loop for the user input and add hooks to incorporate deterministic controls."
 
@@ -310,10 +310,10 @@ End lesson review
   title: "Agents can live inside products - AI reviewer"
   spoken_content:
     - "Revisit the same pattern with slightly more structure in the AI reviewer example (`pydantic-ai-reviewer/src/pydantic_ai_reviewer/ai_reviewer.py`)."
-    - "Change directory first: `cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/pydantic-ai-reviewer && uv run python -m pydantic_ai_reviewer`"
+    - "Change directory first: `cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/pydantic-ai-reviewer && uv run python -m pydantic_ai_reviewer`"
     - "Point out that this is still the same basic recipe, model, skills, tools, instructions – we've added structured output, and a review_job_application function that allows normal code to interface with the agent."
     - "Key point: it is not doing software development, it is executing a job application review workflow, and it is embedded inside an app."
-    - "Review `/Users/johnberryman/projects/github/arcturus-labs/agents-showcase/pydantic-ai-reviewer/skills/screen-candidate/SKILL.md`."
+    - "Review `/Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/pydantic-ai-reviewer/skills/screen-candidate/SKILL.md`."
     - "Skills are the new programs, and the behavior of AI software is increasingly written in natural language."
     - "Huge impact: subject matter experts and users can read it, inspect it, and even debug it themselves. The line between user, SME, and developer starts to blur."
     - "Point to the prior talk with a QR code."
@@ -474,8 +474,8 @@ End lesson review
         - "The prompt is still part of the program"
     right_side:
       artifacts:
-        - "[The smallest possible agent script](https://github.com/arcturus-labs/agents-showcase/blob/main/agents-from-simple-to-complex/src/1-just-a-model.py)"
-      command: "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/1-just-a-model.py"
+        - "[The smallest possible agent script](https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/agents-from-simple-to-complex/src/1-just-a-model.py)"
+      command: "cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/1-just-a-model.py"
       prompt: "tell me a joke"
   speaker_notes:
     - "These code-heavy demo slides are mostly practical references, not beauty slides."
@@ -493,8 +493,8 @@ End lesson review
         - "No magic, just one new capability"
     right_side:
       artifacts:
-        - "[A manual tool loop example](https://github.com/arcturus-labs/agents-showcase/blob/main/agents-from-simple-to-complex/src/2-tool-loop.py)"
-      command: "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/2-tool-loop.py"
+        - "[A manual tool loop example](https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/agents-from-simple-to-complex/src/2-tool-loop.py)"
+      command: "cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/2-tool-loop.py"
       prompt: "what is Hacker News saying about John Berryman?"
   speaker_notes:
     - "These code-heavy demo slides are mostly practical references, not beauty slides."
@@ -511,8 +511,8 @@ End lesson review
         - "Better developer ergonomics"
     right_side:
       artifacts:
-        - "[A PydanticAI version of the same pattern](https://github.com/arcturus-labs/agents-showcase/blob/main/agents-from-simple-to-complex/src/3-pydantic-ai.py)"
-      command: "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/3-pydantic-ai.py"
+        - "[A PydanticAI version of the same pattern](https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/agents-from-simple-to-complex/src/3-pydantic-ai.py)"
+      command: "cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/3-pydantic-ai.py"
       prompt: "what is Hacker News saying about John Berryman?"
   speaker_notes:
     - "These code-heavy demo slides are mostly practical references, not beauty slides."
@@ -530,9 +530,9 @@ End lesson review
         - "With the right tools, the agent becomes quite general"
     right_side:
       artifacts:
-        - "[A read/write/shell agent](https://github.com/arcturus-labs/agents-showcase/blob/main/agents-from-simple-to-complex/src/4-pydantic-ai-read-write-edit.py)"
-      command: "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/4-pydantic-ai-read-write-edit.py"
-      prompt: "In /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/scratch_space, create a cli tool in rust that generates the first N primes (N provided as argument), make standard rust package, build it, tell me how to run it as a one-liner (use absolute paths)."
+        - "[A read/write/shell agent](https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/agents-from-simple-to-complex/src/4-pydantic-ai-read-write-edit.py)"
+      command: "cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/4-pydantic-ai-read-write-edit.py"
+      prompt: "In /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/scratch_space, create a cli tool in rust that generates the first N primes (N provided as argument), make standard rust package, build it, tell me how to run it as a one-liner (use absolute paths)."
       follow_up: "Review the code and run it."
   speaker_notes:
     - "These code-heavy demo slides are mostly practical references, not beauty slides."
@@ -552,9 +552,9 @@ End lesson review
         - "Agents are the runtime"
     right_side:
       artifacts:
-        - "[A skills-enabled research agent](https://github.com/arcturus-labs/agents-showcase/blob/main/agents-from-simple-to-complex/src/5-pydantic-ai-search-skills.py)"
-        - "[The screen-candidate skill file](https://github.com/arcturus-labs/agents-showcase/blob/main/pydantic-ai-reviewer/skills/screen-candidate/SKILL.md)"
-      command: "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/5-pydantic-ai-search-skills.py"
+        - "[A skills-enabled research agent](https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/agents-from-simple-to-complex/src/5-pydantic-ai-search-skills.py)"
+        - "[The screen-candidate skill file](https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/pydantic-ai-reviewer/skills/screen-candidate/SKILL.md)"
+      command: "cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/5-pydantic-ai-search-skills.py"
       prompt: "Research this: Why did the Roman Republic turn into the Roman Empire?"
   speaker_notes:
     - "These code-heavy demo slides are mostly practical references, not beauty slides."
@@ -572,8 +572,8 @@ End lesson review
         - "Hooks are functions at specific lifecycle points"
     right_side:
       artifacts:
-        - "[An assistant with history compaction](https://github.com/arcturus-labs/agents-showcase/blob/main/agents-from-simple-to-complex/src/6-pydantic-ai-assistant-w-compaction.py)"
-      command: "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/agents-from-simple-to-complex && uv run src/6-pydantic-ai-assistant-w-compaction.py"
+        - "[An assistant with history compaction](https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/agents-from-simple-to-complex/src/6-pydantic-ai-assistant-w-compaction.py)"
+      command: "cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/agents-from-simple-to-complex && uv run src/6-pydantic-ai-assistant-w-compaction.py"
       prompt_flow:
         - "Tell me a joke"
         - "Explain the joke"
@@ -667,9 +667,9 @@ End lesson review
         - "The behavior is written in English"
     right_side:
       artifacts:
-        - "[The AI reviewer agent implementation](https://github.com/arcturus-labs/agents-showcase/blob/main/pydantic-ai-reviewer/src/pydantic_ai_reviewer/ai_reviewer.py)"
-        - "[The screen-candidate skill file](https://github.com/arcturus-labs/agents-showcase/blob/main/pydantic-ai-reviewer/skills/screen-candidate/SKILL.md)"
-      command: "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase/pydantic-ai-reviewer && uv run python -m pydantic_ai_reviewer"
+        - "[The AI reviewer agent implementation](https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/pydantic-ai-reviewer/src/pydantic_ai_reviewer/ai_reviewer.py)"
+        - "[The screen-candidate skill file](https://github.com/arcturus-labs/talk--unharness-the-agent/blob/main/pydantic-ai-reviewer/skills/screen-candidate/SKILL.md)"
+      command: "cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent/pydantic-ai-reviewer && uv run python -m pydantic_ai_reviewer"
   speaker_notes:
     - "This one gets a little more polish, but it still works as a practical reference slide."
     - "During the talk, I will use it as a navigation and command reference."

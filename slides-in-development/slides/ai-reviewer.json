@@ -52,7 +52,7 @@
     },
     "command": {
       "type": "text",
-      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/agents-showcase && uv run src/7-pydantic-ai-reviewer.py"
+      "value": "cd /Users/johnberryman/projects/github/arcturus-labs/talk--unharness-the-agent && uv run src/7-pydantic-ai-reviewer.py"
     },
     "footnote": {
       "type": "text",
